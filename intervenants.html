@@ -7,42 +7,184 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+       <!-- ================== HEADER ================= -->
+<header>
+        <!-- ===================NAVBAR================= -->
+    <nav class="navbar">
+                    <!-- logo -->
+        <a href="index.html" class="logo">
+            AfriConnectSummit <span>2026</span>
+        </a>
+            <!-- Menu de navigation  -->
+        <ul class="nav-link">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">programme</a></li>
+            <li><a href="intervenants.html">intervenants</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+            <!-- action  -->
+        <div class="nav-actions">
+                <!-- Bouton dark mode  -->
+                 <button id="theme-toggle" aria-label="changer le theme">
+                    <i class="bi bi-moon-stars-fill"></i>
+                 </button>
+                 <!-- Menu hamburger  -->
+                  <button class="menu-toggle" aria-label="Ouvrir le menu">
+                    <i class="bi bi-list"></i>
+                  </button>
 
+        </div>     
+    </nav>
+</header>
+        
+        
+    <section class="hero-interne">
+        <div class="container">
+            <h1>intervenants AfriConnectSummit 2026</h1>
+            <nav class="breadcurumb">
+                <a href="index.html">Accueil</a> > intervenants
+           
+    </section>
 
+            <!-- FILTRAGE DYNAMIQUE -->
+<section class="intervenants">
+    <div class="container">
+        <h2>Nos intervenants</h2>
+         <!-- button de filtre  -->
+          <div class="filtres">
+            <button class="btn-fil active "data-filtre="tous">Tous</button>
+            <button class="btn-filtre" data-filtre="ia">AI & Tech</button>
+            <button class="btn-filtre" data-filtre="bisiness">Business</button>
+            <button class="btn-filtre" data-filtre="data">Design</button>
+            <button class="btn-filtre" data-filtre="data">Data</button>
+          </div>
 
+          <!-- Grille des cartes  -->
 
+          <div class="grille-intervenants">
+            <article class="carte-intervenant" data-categorie="ia">
+                <img src="images/intervants1.jpg"    alt="Aminata Diao" width="200">
+                <h3>Aminata Diao</h3>
+                <p class="specialiste">Experte IA & Tech</p>
+            </article>
+          <article class="carte-intervenant" data-categorie="Business">
+            <img src="images/intervants7.jpg"  alt="Moussa Diop"  width="200" >
+            <h3>Moussa Diop</h3>
+            <p class="specialiste">CEO Fintech</p>
+          </article>
+          <article class="carte-intervenant" data-categorie="design">
+            <img src="images/intervants3.jpg"   alt="Fatou Ndiaye" width="200">
+            <h3>Fatou Ndiaye</h3>
+            <p class="specialiste">UX Designer</p>
+          </article>
+          <article class="carte-intervenant" data-categorie="data">
+            <img src="images/intervants14.jpg"   alt="Ibrahima Ba" width="200">
+            <h3>Ibrahima Ba</h3>
+            <p class="specialiste">Data Scientist</p>
+          </article>
+    </div>    
+    </div>
+</section>
 
+        <!-- GRILLE D'INTERVENANTS -->
+   <h2>Les Intervenants AfriConnectSummit 2026</h2>
 
+   
+<section  class="grille-intervenants">
+    <article class="carte-intervenant" data-categorie="ia">
+        <img src="images/intervants5.jpg"  alt="Ndeye Fatou" width="200">
+        <h3> Ndeye Fatou</h3>
+        <p class="specialiste">Experte IA</p>
+        <p class="pays">Senegal</p>
+    </article>
+    <article class="carte-intervenant" data-categorie="business">
+        <img src="images/intervants6.jpg" alt="Oumy Sene" width="200">
+        <h3>Oumy Sene</h3>
+        <p class="specialiste">CEO Fintech</p>
+        <p class="pays">Cote d'Ivoire</p>
+    </article>
+     <article class="carte-intervenant" data-categorie="design">
+        <img src="images/intervants15.jpg"  alt="Saly Ba" width="200">
+        <h3>Saly Ba</h3>
+        <p class="specialiste">UX Designer</p>
+        <p class="pays">Maroc</p>
+    </article>
+     <article class="carte-intervenant" data-categorie="data">
+        <img src="images/intervants12.jpg"  alt="Mohamed Lamine" width="200" >
+        <h3>Mohamed Lamine</h3>
+        <p class="specialiste">Data Scientist</p>
+        <p class="pays">Nigeria</p>
+    </article>
+    <article class="carte-intervenant" data-categorie="ia">
+        <img src="images/sponsors2.jpg" height="150" alt="Rama sylla" class="Dev IA">
+        <h3>Rama sylla</h3>
+        <p class="specialiste">Dev IA</p>
+        <p class="pays">Mali</p>
+    </article>
+     <article class="carte-intervenant" data-categorie="ia">
+        <img src="images/intervants11.jpg"  alt="Jean Ndeky" width="200">
+        <h3>Jean Ndeky</h3>
+        <p class="specialiste">Investissement</p>
+        <p class="pays">Cameroun</p>
+    </article>
+     <article class="carte-intervenant" data-categorie="design">
+        <img src="images/intervants7.jpg" alt="Salim Idriss" width="200">
+        <h3>Salim Idriss</h3>
+        <p class="specialiste">Product Design</p>
+        <p class="pays">Tunisie</p>
+    </article>
+     <article class="carte-intervenant" data-categorie="data">
+        <img src="images/intervants9.jpg"  alt="Elhaje Skho" width="200">
+        <h3>Elhaje Sakho</h3>
+        <p class="specialiste">Annalyse Data</p>
+        <p class="pays">Ghana</p>
+    </article>
+     <article class="carte-intervenant" data-categorie="ia">
+        <img src="images/avatar6.jpg"  alt="Mariam Ahmed" width="200">
+        <h3>Mariam Ahmed</h3>
+        <p class="specialiste">Chercheuche IA</p>
+        <p class="pays">Egypte</p>
+    </article>
 
+</section>
+<!-- =====================   Footer ============================ -->
+<footer class="footer">
 
+    <div class="footer-column">
+        <h2>Connecter l'Afrique</h2>
+        <p>
+            AfriConnectSummit 2026 : Le sommet qui réunit les talents tech du continent.
+        </p>
+    </div>
 
+    <div class="footer-column">
+        <h4>Liens rapides</h4>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
+    <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email : contact@africonnectsummit.com</p>
+        <p>Dakar, Sénégal</p>
 
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+    <hr class="bg-secondary">
+      <p class="text-center small mb-0">
+        © <span id="year"></span> AfriConnectSummit. Tous droits réservés.
+      </p>
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</footer>
+<button id="topBtn">↑</button>
 
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap"

@@ -7,42 +7,146 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+     
+            <!-- NAVBAR -->
+       <!-- ================== HEADER ================= -->
+<header>
+        <!-- ===================NAVBAR================= -->
+    <nav class="navbar">
+                    <!-- logo -->
+        <a href="index.html" class="logo">
+            AfriConnectSummit <span>2026</span>
+        </a>
+            <!-- Menu de navigation  -->
+        <ul class="nav-link">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">programme</a></li>
+            <li><a href="intervenants.html">intervenants</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+            <!-- action  -->
+        <div class="nav-actions">
+                <!-- Bouton dark mode  -->
+                 <button id="theme-toggle" aria-label="changer le theme">
+                    <i class="bi bi-moon-stars-fill"></i>
+                 </button>
+                 <!-- Menu hamburger  -->
+                  <button class="menu-toggle" aria-label="Ouvrir le menu">
+                    <i class="bi bi-list"></i>
+                  </button>
 
+        </div>     
+    </nav>
+</header>
+        <!-- SECTION HERO -->
+<main>
+    <section class="hero-contact">
+        <h2>Rejoignez AfriConnectSummit 2026</h2>
+        <p>Inscrivez-vous des maintenant</p>
+    </section>
+        <!-- Formulaire  -->
+    <section class="contact-section">
+        <div class="form-container">
+            <form id="contactForm">
+                <input type="text" placeholder="Nom Complet" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Telephone" required>
 
+                <select required>
+                    <option value="">  Type de participation</option>
+                    <option>Etudiant</option>
+                    <option>Developpeur</option> 
+                    <option>Entrepreneurs</option>  
+                </select>
 
+                <select required>
+                    <option value="">Pays</option>
+                    <option>Senegal</option>
+                    <option>Mali</option> 
+                    <option>Code d'Ivoire</option>  
+                    <option>Ghana</option>    
+                    <option>Maroc</option> 
+                    <option>Nigeria</option>
+                    <option>Egypte</option> 
+                    <option>Tunisie</option>
+                    <option>Rwanda</option> 
+                    <option>Cameroun</option> 
+                </select>
+                <textarea placeholder="votre message"required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        </section>
+        <div class="info">
+            <h3>Infortions</h3>
+            <p>Email:contact@afriConnectSummit.com</p>
+            <p>Lieu:Dakar,Senegal</p>
+        </div>
+            <!-- FAQ -->
+        <section class="faq-">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <input type="checkbox" id="q1">
+                <label for="q1">Comment S'inscrire ?</label>
+                <p>Remplissez le formulaire ci-dessus.</p>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="q2">
+                <label for="q2">Est-ce gratuit ?</label>
+                <p>Oui pour les etudiants.</p>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="q3">
+                <label for="q3">Ou se deroule l'evenement ?</label>
+                <p>A Dakar.</p>
+            </div>
+            
+        </section>
+            <!-- Map -->
+             <section class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.143155717!2d-17.444053685158!3d14.693700089755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3b6f9f1%3A0x4b4b4b4b!2sDakar!5e0!3m2!1sfr!2ssn!4v1700000000000"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+             </section>
+   
+</main>
+<footer class="footer">
 
+    <div class="footer-column">
+        <h2>Connecter l'Afrique</h2>
+        <p>
+            AfriConnectSummit 2026 : Le sommet qui réunit les talents tech du continent.
+        </p>
+    </div>
 
+    <div class="footer-column">
+        <h4>Liens rapides</h4>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
+    <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email : contact@africonnectsummit.com</p>
+        <p>Dakar, Sénégal</p>
 
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
 
+    <hr class="bg-secondary">
+      <p class="text-center small mb-0">
+        © <span id="year"></span> AfriConnectSummit. Tous droits réservés.
+      </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</footer>
+<button id="topBtn">↑</button>
 
 
 
