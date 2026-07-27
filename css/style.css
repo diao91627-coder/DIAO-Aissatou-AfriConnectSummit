@@ -658,3 +658,195 @@ justify-content:center;
     border-top:8px solid peru;
     margin-bottom:40px;
 }
+/* ================= COMMIT 5 ================= */
+
+/*================ CONTACT ================*/
+
+.contact-section{
+    padding:40px 5%;
+}
+
+#contactForm{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:700px;
+    margin:auto;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:1rem;
+}
+
+#contactForm textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+#contactForm button{
+    background:var(--primary);
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#contactForm button:hover{
+    background:var(--secondary);
+}
+
+.info{
+    text-align:center;
+    margin:40px 0;
+}
+
+/*================ FAQ ================*/
+
+.faq{
+    padding:40px 5%;
+}
+
+.faq-item{
+    background:#fff;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:var(--shadow);
+}
+
+.faq-item input{
+    display:none;
+}
+
+.faq-item label{
+    display:block;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.faq-item p{
+    display:none;
+    margin-top:10px;
+}
+
+.faq-item input:checked ~ p{
+    display:block;
+}
+
+/*================ MAP ================*/
+
+.map{
+    padding:40px 5%;
+}
+
+.map iframe{
+    width:100%;
+    border-radius:12px;
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:768px){
+
+    .hero-container,
+    .why-container,
+    .sponsors-container
+        
+    
+
+    .stats-container,
+    .speackers-grid,
+    .thematiques-grid,
+    .grille-intervenants,
+    .footer{
+        grid-template-columns:1fr;
+    }
+
+    .countdown-container{
+        flex-wrap:wrap;
+    }
+
+    .footer{
+        text-align:center;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-link{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+/*================ FOOTER ================*/
+.footer{
+    margin-top:80px;
+    background:black;
+    color:#fff;
+    padding:50px 5% 20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-column h2,
+.footer-column h4{
+    margin-bottom:15px;
+}
+
+.footer-column span{
+    color:#ff4fca;
+}
+
+.footer-column ul{
+    list-style:none;
+} 
+
+.footer-column li{
+    margin-bottom:10px;
+}
+
+.footer-column a{
+    color:#fff;
+}
+
+.footer-column a:hover{
+    color:#ff4fcaec;
+}
+ .footer-bottom{
+    grid-column:1/-1;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-top:1px solid rgba(255,255,255,.3);
+    padding-top:20px;
+} 
+
+.back-to-top{
+    color:#fff;
+    font-size:1.8rem;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
