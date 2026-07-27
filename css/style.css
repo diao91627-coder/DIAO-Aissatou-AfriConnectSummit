@@ -850,3 +850,116 @@ justify-content:center;
 body{
     overflow-x: hidden;
 }
+
+/* ======================== COMMIT 6 ==================== */
+/*================ MEDIA QUERY ================*/
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-link{
+        display:none;
+        flex-direction:column;
+        gap:15px;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:var(--primary);
+        padding:20px;
+        z-index:1000;
+    }
+
+    .nav-link.active{
+        display:flex;
+    }
+
+    .hero-container,
+    .why-container,
+    .sponsors-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-texte,
+    .countdown{
+        text-align:center;
+        align-items:center;
+    }
+
+    .countdown-container{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .stats-container,
+    .speackers-grid,
+    .thematiques-grid,
+    .grille-intervenants,
+    .footer{
+        grid-template-columns:1fr;
+    }
+
+    .footer{
+        text-align:center;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:15px;
+    }
+
+}
+
+
+/*================ MODE SOMBRE ================*/
+
+.dark-mode{
+    background:#1a1a1a;
+    color:#ffffff;
+}
+
+.dark-mode .stats,
+.dark-mode .programme,
+.dark-mode .contact-section,
+.dark-mode .faq,
+.dark-mode .speakers,
+.dark-mode .sponsors{
+    background:#222;
+}
+
+.dark-mode .stat-item,
+.dark-mode .why-card,
+.dark-mode .speakers-card,
+.dark-mode .sponsor-card,
+.dark-mode .carte-intervenant,
+.dark-mode .thematique-card,
+.dark-mode .faq-item{
+    background:#333;
+    color:#fff;
+}
+
+.dark-mode .time-box{
+    background:#333;
+    color:#fff;
+}
+
+.dark-mode .time-box p{
+    color:#fff;
+}
+
+.dark-mode .tab-content table{
+    background:#333;
+    color:#fff;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select{
+    background:#444;
+    color:#fff;
+    border:1px solid #666;
+}
