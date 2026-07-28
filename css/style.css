@@ -164,6 +164,7 @@ a{
 }
 
 
+
 .hero-texte h2,h1{
     font-size:3.5rem;
     margin-bottom:20px;
@@ -574,7 +575,39 @@ a{
 .pays{
     color:#777;
 }
+/*================ FILTRES INTERVENANTS ================*/
 
+.filtres{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:30px 0;
+}
+
+.btn-filtre{
+    padding:12px 25px;
+    border:2px solid var(--primary);
+    border-radius:30px;
+    background:#fff;
+    color:var(--primary);
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-filtre:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.btn-filtre.active{
+    background:var(--primary);
+    color:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
 
 /*================ INTERVENANTS VEDETTES ================*/
 .speakers{
@@ -953,7 +986,7 @@ body{
     color:#fff;
 }
 
-.dark-mode .time-box p,{  /* le texte jours dois rester blanc  */
+.dark-mode .time-box p{  /* le texte jours dois rester blanc  */
 
     color:#fff;
 }
